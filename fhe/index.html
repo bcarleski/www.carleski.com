@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta name="viewport" content="width=device-width">
+		<title>FHE Chart</title>
+		<link rel='stylesheet' type='text/css' href='css/fhe.css?v=6' />
+		<script src='https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.5.8/angular.min.js'></script>
+		<script type='text/javascript' src='js/fhedata.js?v=5'></script>
+	</head>
+	<body ng-app="fheApp" ng-controller="fheController as c">
+		<div class="links">
+			<div class="prev-link"><a href="?date={{c.prevDate | date:'MM/dd/yyyy'}}">&lt;&lt;&lt; Previous Week</a></div>
+			<div class="next-link"><a href="?date={{c.nextDate | date:'MM/dd/yyyy'}}">Next Week &gt;&gt;&gt;</a></div>
+		</div>
+		<div class="title">FHE Assignments from {{c.fromDate | date:'MM/dd/yyyy'}} to {{c.toDate | date:'MM/dd/yyyy'}}</div>
+		<div class="person-fhe" ng-repeat="personFHE in c.personFHE">
+			<div class="fhe-header">
+				<div class="fhe {{personFHE.fhe.class}}">{{personFHE.fhe.title}}</div>
+				<div class="people"><span ng-repeat="person in personFHE.people" class="person {{person.class}}">{{person.name}}<span></div>
+			</div>
+		</div>
+	</body>
+</html>

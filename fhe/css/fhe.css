@@ -1,0 +1,153 @@
+html {
+	font-family: Calibri, Candara, Segoe, 'Segoe UI', Optima, Arial, sans-serif;
+	font-size: 1em;
+}
+
+ol, ul, li {
+	font-size: 1em;
+}
+
+.links {
+	font-size: 0.7em;
+}
+
+.prev-link {
+	display: inline-block;
+}
+.next-link {
+	display: inline-block;
+	margin-left: 48px;
+}
+
+.hidden {
+	display: none;
+}
+
+.title {
+	font-size: 1.4em;
+	font-weight: bold;
+	margin-bottom: 6px;
+}
+
+.person-fhe {
+	margin-top: 16px;
+	border-style: double;
+	border-color: #A0A0A0;
+	position: relative;
+}
+
+.fhe-header {
+	padding: 4px;
+	cursor: pointer;
+	width: 500px;
+}
+
+.fhe {
+	width: 240px;
+	display: inline-block;
+	padding: 2px 4px;
+	font-weight: bold;
+}
+
+.people {
+	width: 240px;
+	display: inline-block;
+}
+
+.person {
+	margin-right: 12px;
+	padding: 2px 6px;
+	border-width: 2px;
+	border-style: solid;
+	font-weight: bold;
+}
+
+/*Tree Frog*/
+.robert {
+	background-color: #FFFFFF;
+	color: #DC1410;
+	border-color: #2E82B5;
+}
+/*Seahawks*/
+.george {
+	background-color: #808080;
+	color: #B5BCBF;
+	border-color: #69BE28;
+}
+/*Timbers*/
+.calvin {
+	background-color: #664107;
+	color: #F0FFF0;
+	border-color: #EAE727;
+}
+/*Twilight Sparkle*/
+.benny {
+	background-color: #93EAED;
+	color: #26336F;
+	border-color: #E5298D;
+}
+/*OSU*/
+.kristopher {
+	background-color: #F4C15A;
+	color: #FFFFFF;
+	border-color: #000000;
+}
+/*Pink*/
+.phineas {
+	background-color: #0E21CE;
+	color: #E04296;
+	border-color: #FCF100;
+}
+/*Doc McStuffins*/
+.caroline {
+	background-color: #4B214F;
+	color: #744FA9;
+	border-color: #E2539A;
+}
+
+.dishes {
+	background-color: #9CA1FF;
+}
+
+.kitchen-laundry {
+	background-color: #9ED1EB;
+}
+
+.living-dining {
+	background-color: #9ECC7E;
+}
+
+.bathrooms {
+	background-color: #FFE69E;
+}
+
+.hallways-family-stairs {
+	background-color: #FFC49E;
+}
+
+.pickup-floors {
+	background-color: #BF8EE5;
+}
+
+.be-cute {
+	background-color: #FF9EE0;
+}
+
+.task-list {
+	border-top-style: solid;
+	border-top-color: #A0A0A0;
+	padding: 4px 4px 4px 20px;
+	margin: 0;
+}
+
+.daily {
+	background-color: #D7F2C4;
+}
+
+.weekly {
+	background-color: #E4CAF9;
+}
+
+.tue-thu-sat {
+	background-color: #D8D8FF;
+}

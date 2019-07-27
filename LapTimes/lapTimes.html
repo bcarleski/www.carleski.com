@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html style='width: 100%; height: 100%'>
+	<head>
+		<title>Lap Time Tracking</title>
+		<script src="http://crypto-js.googlecode.com/svn/tags/3.1.2/build/rollups/aes.js"></script>
+		<script src="http://crypto-js.googlecode.com/svn/tags/3.1.2/build/rollups/sha3.js"></script>
+		<script src="http://crypto-js.googlecode.com/svn/tags/3.1.2/build/rollups/hmac-sha256.js"></script>
+		<script src="aws.js"></script>
+		<script type="text/javascript" src="lapTimes.js"></script>
+	</head>
+	<body style='width: 100%; height: 100%'>
+		<div id='divEntry'>
+			<h2>Lap Time Tracking</h2>
+			<h3>Enter the distance of one lap in feet</h3>
+			<input id="txtLap" type="number" value="1150" />
+			<h3>Enter the names, and optionally the colors, for each person running laps</h3>
+			<table id="tblEntry">
+				<tr>
+					<th>Name</th>
+					<th>Background Color</th>
+					<th>Foreground Color</th>
+					<th></th>
+				</tr>
+				<tr>
+					<td style='text-align: center'><input id="txtName0" type="text" value="Dad" /></td>
+					<td style='text-align: center'><input id="txtBackground0" type="color" value="#008000" /></td>
+					<td style='text-align: center'><input id="txtForeground0" type="color" value="#F0FFF0" /></td>
+					<td><button onclick="removeEntryRow(this); return false;">X</button></td>
+				</tr>
+				<tr>
+					<td style='text-align: center'><input id="txtName1" type="text" value="Mom" /></td>
+					<td style='text-align: center'><input id="txtBackground1" type="color" value="#800080" /></td>
+					<td style='text-align: center'><input id="txtForeground1" type="color" value="#FFE0FF" /></td>
+					<td><button onclick="removeEntryRow(this); return false;">X</button></td>
+				</tr>
+				<tr>
+					<td style='text-align: center'><input id="txtName2" type="text" value="R" /></td>
+					<td style='text-align: center'><input id="txtBackground2" type="color" value="#4040FF" /></td>
+					<td style='text-align: center'><input id="txtForeground2" type="color" value="#000000" /></td>
+					<td><button onclick="removeEntryRow(this); return false;">X</button></td>
+				</tr>
+				<tr>
+					<td style='text-align: center'><input id="txtName3" type="text" value="C" /></td>
+					<td style='text-align: center'><input id="txtBackground3" type="color" value="#FF0000" /></td>
+					<td style='text-align: center'><input id="txtForeground3" type="color" value="#200000" /></td>
+					<td><button onclick="removeEntryRow(this); return false;">X</button></td>
+				</tr>
+				<tr>
+					<td style='text-align: center'><input id="txtName4" type="text" value="B" /></td>
+					<td style='text-align: center'><input id="txtBackground4" type="color" value="#C34500" /></td>
+					<td style='text-align: center'><input id="txtForeground4" type="color" value="#002000" /></td>
+					<td><button onclick="removeEntryRow(this); return false;">X</button></td>
+				</tr>
+				<tr>
+					<td style='text-align: center'><input id="txtName5" type="text" value="K" /></td>
+					<td style='text-align: center'><input id="txtBackground5" type="color" value="#FF6600" /></td>
+					<td style='text-align: center'><input id="txtForeground5" type="color" value="#201000" /></td>
+					<td><button onclick="removeEntryRow(this); return false;">X</button></td>
+				</tr>
+				<tr>
+					<td style='text-align: center'><input id="txtName6" type="text" value="P" /></td>
+					<td style='text-align: center'><input id="txtBackground6" type="color" value="#00B0B0" /></td>
+					<td style='text-align: center'><input id="txtForeground6" type="color" value="#001B1B" /></td>
+					<td><button onclick="removeEntryRow(this); return false;">X</button></td>
+				</tr>
+			</table>
+			<button id="btnStart" onclick="start();">Start</button>
+		</div>
+		<div id='divContent' style='width: 100%; height: 100%; display:none'></div>
+	</body>
+</html>
