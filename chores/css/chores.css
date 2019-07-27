@@ -104,12 +104,18 @@ ol, ul, li {
 	color: #744FA9;
 	border-color: #E2539A;
 }
+/*Doc McStuffins*/
+.everyone {
+	background-color: #FFFFFF;
+	color: #404040;
+	border-color: #CCC;
+}
 
 .dishes {
 	background-color: #9CA1FF;
 }
 
-.kitchen-laundry {
+.kitchen {
 	background-color: #9ED1EB;
 }
 
@@ -131,6 +137,10 @@ ol, ul, li {
 
 .be-cute {
 	background-color: #FF9EE0;
+}
+
+.dishes {
+	background-color: #9CA1FF;
 }
 
 .task-list {

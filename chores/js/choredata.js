@@ -7,7 +7,8 @@ angular.module('choresApp', []).controller('choresController', function ChoresCo
 		{"name":"Robert","class":"robert"},
 		{"name":"Kristopher","class":"kristopher","fixedChore":"Clean Bedroom"},
 		{"name":"Phineas","class":"phineas","fixedChore":"Clean Bedroom"},
-		{"name":"Caroline","class":"caroline","fixedChore":"Clean Bedroom"}
+		{"name":"Caroline","class":"caroline","fixedChore":"Clean Bedroom"},
+		{"name":"EVERYONE","class":"everyone","fixedChore":"Kitchen"}
 	];
 
 	var chores = [
@@ -119,7 +120,8 @@ angular.module('choresApp', []).controller('choresController', function ChoresCo
 						"Clean out front closet",
 						"Put away everything on hallway bench",
 						"Move and sweep under hallway bench",
-						"Sweep and vacuum the upstairs hallway"
+						"Sweep and vacuum the upstairs hallway",
+						"Empty dishwasher as needed"
 					]
 				},
 				{	"title":"Tuesday / Thursday / Saturday",
@@ -152,6 +154,26 @@ angular.module('choresApp', []).controller('choresController', function ChoresCo
 						"Put all laundry in drawers or dirty bins",
 						"Take all trash to trash can",
 						"Make beds"
+					]
+				}
+			]
+		},
+		{	"title":"Kitchen",
+			"class":"kitchen",
+			"tasks":[
+				{
+					"title":"Any Time It Needs It",
+					"class":"daily",
+					"subTasks":[
+						"Rinse ALL dishes so no food is visible",
+						"Load a load of dishes into dishwasher",
+						"Add detergent, and start dishwasher",
+						"Wipe out sink",
+						"Wipe down cabinet doors",
+						"Clean counters, including under and behind appliances",
+						"Wipe down all appliances",
+						"Scrub microwave, inside and out",
+						"Organize everyone picking up the kitchen"
 					]
 				}
 			]
