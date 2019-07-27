@@ -22,6 +22,7 @@ angular.module('choresApp', []).controller('choresController', function ChoresCo
 						"Sweep and vacuum family room",
 						"Wipe down TV stand",
 						"Dust piano",
+						"Pick up library closet",
 						"Move couch, clean underneath",
 						"Take off cushions, clean underneath"
 					]
@@ -30,7 +31,6 @@ angular.module('choresApp', []).controller('choresController', function ChoresCo
 					"class":"weekly",
 					"subTasks":[
 						"Vacuum edges of all walls using wand",
-						"Move, clean, and vacuum under hallway bench",
 						"Mop back hallway",
 						"Wipe down window and TV",
 						"Pick up, arrange, and clean library",
@@ -59,6 +59,13 @@ angular.module('choresApp', []).controller('choresController', function ChoresCo
 						"Sweep laundry room floor"
 					]
 				},
+				{	"title":"Tuesday / Thursday / Saturday",
+					"class":"tue-thu-sat",
+					"subTasks":[
+						"Collect all the trash from the kitchen, bathrooms, and parent's room",
+						"Take trash to the outside cans"
+					]
+				},
 				{	"title":"Weekly",
 					"class":"weekly",
 					"subTasks":[
@@ -73,7 +80,7 @@ angular.module('choresApp', []).controller('choresController', function ChoresCo
 				}
 			]
 		},
-		{	"title":"Living Room / Dining Room / Hallways",
+		{	"title":"Living Room / Dining Room",
 			"class":"living-dining",
 			"tasks":[
 				{	"title":"Daily",
@@ -81,9 +88,6 @@ angular.module('choresApp', []).controller('choresController', function ChoresCo
 					"subTasks":[
 						"Sweep and vacuum the living room floor",
 						"Sweep and vacuum the dining room floor",
-						"Sweep and vacuum the front hallway",
-						"Vacuum the staircase",
-						"Sweep and vacuum the upstairs hallway",
 						"Wipe down dining room table and chairs"
 					]
 				},
@@ -93,55 +97,47 @@ angular.module('choresApp', []).controller('choresController', function ChoresCo
 						"Vacuum edges of all walls using wand",
 						"Mop living room floor",
 						"Mop dining room floor",
-						"Mop downstairs hallway floor",
-						"Mop upstairs hallway floor",
 						"Clean window seat",
 						"Clean playsets",
 						"Move and clean out under couch",
 						"Take off couch cushions and vacuum",
 						"Clean out under couch cushions",
-						"Clean out front closet",
 						"Wipe down front door and sliding glass door"
 					]
 				}
 			]
 		},
-		{	"title":"Kitchen",
+		{	"title":"Hallways",
 			"class":"dishes",
 			"tasks":[
 				{
 					"title":"Daily",
 					"class":"daily",
 					"subTasks":[
-						"Unload existing dishes from dishwasher",
-						"Rinse ALL dishes so no food is visible",
-						"Load a load of dishes into dishwasher",
-						"Add detergent, and start dishwasher",
-						"Wipe out sink",
-						"Organize everyone picking up the kitchen"
+						"Sweep and vacuum the front hallway",
+						"Vacuum the staircase",
+						"Clean out front closet",
+						"Put away everything on hallway bench",
+						"Move and sweep under hallway bench",
+						"Sweep and vacuum the upstairs hallway"
 					]
 				},
 				{	"title":"Tuesday / Thursday / Saturday",
 					"class":"tue-thu-sat",
 					"subTasks":[
-						"Collect all the trash and recycling from the kitchen, bathrooms, and parent's room",
-						"Take trash recycling to the outside cans"
+						"Take all recycling to the outside cans"
 					]
 				},
 				{
 					"title":"Weekly",
 					"class":"weekly",
 					"subTasks":[
-						"Hand wash all remaining dishes",
-						"Scrub sink",
-						"Clean out dishwasher and refill JetDry",
-						"Wipe down cabinet doors",
-						"Clean counters, including under and behind appliances",
-						"Wipe down all appliances",
-						"Scrub microwave, inside and out",
-						"Take the trash and recycling out to the curb",
-						"Clean out trash cans",
-						"Clean out the recycling cabinet"
+						"Vacuum edges of all walls using wand",
+						"Move, clean, and vacuum under hallway bench",
+						"Mop downstairs hallway floor",
+						"Mop upstairs hallway floor",
+						"Wipe down walls in stairway",
+						"Wipe down front door and sliding glass door"
 					]
 				}
 			]
