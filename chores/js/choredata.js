@@ -5,10 +5,9 @@ angular.module('choresApp', []).controller('choresController', function ChoresCo
 		{"name":"Calvin","class":"calvin"},
 		{"name":"George","class":"george"},
 		{"name":"Robert","class":"robert"},
-		{"name":"Kristopher","class":"kristopher","fixedChore":"Clean Bedroom"},
+		{"name":"Kristopher","class":"kristopher"},
 		{"name":"Phineas","class":"phineas","fixedChore":"Clean Bedroom"},
-		{"name":"Caroline","class":"caroline","fixedChore":"Clean Bedroom"},
-		{"name":"EVERYONE","class":"everyone","fixedChore":"Kitchen"}
+		{"name":"Caroline","class":"caroline","fixedChore":"Clean Bedroom"}
 	];
 
 	var chores = [
@@ -76,7 +75,8 @@ angular.module('choresApp', []).controller('choresController', function ChoresCo
 						"Sweep and mop floors, including under counters",
 						"Wipe down walls and both sides of bathroom doors",
 						"Mop laundry room floors",
-						"Wipe down washer/dryer"
+						"Wipe down washer/dryer",
+						"Scrub kitchen cabinet wall and floor behind garbage can"
 					]
 				}
 			]
@@ -117,17 +117,16 @@ angular.module('choresApp', []).controller('choresController', function ChoresCo
 					"subTasks":[
 						"Sweep and vacuum the front hallway",
 						"Vacuum the staircase",
-						"Clean out front closet",
 						"Put away everything on hallway bench",
 						"Move and sweep under hallway bench",
-						"Sweep and vacuum the upstairs hallway",
-						"Empty dishwasher as needed"
+						"Sweep and vacuum the upstairs hallway"
 					]
 				},
 				{	"title":"Tuesday / Thursday / Saturday",
 					"class":"tue-thu-sat",
 					"subTasks":[
-						"Take all recycling to the outside cans"
+						"Take all recycling to the outside cans",
+						"Take out compost"
 					]
 				},
 				{
@@ -138,8 +137,41 @@ angular.module('choresApp', []).controller('choresController', function ChoresCo
 						"Move, clean, and vacuum under hallway bench",
 						"Mop downstairs hallway floor",
 						"Mop upstairs hallway floor",
-						"Wipe down walls in stairway",
-						"Wipe down front door and sliding glass door"
+						"Wipe down walls",
+						"Wipe down front door and sliding glass door",
+						"Clean out front closet",
+						"Scrub out recycling cabinet"
+					]
+				}
+			]
+		},
+		{	"title":"Kitchen",
+			"class":"kitchen",
+			"tasks":[
+				{
+					"title":"Daily",
+					"class":"daily",
+					"subTasks":[
+						"Empty the dishwasher in the morning",
+						"Rinse ALL dishes so no food is visible",
+						"Load a load of dishes into dishwasher",
+						"Add detergent, and start dishwasher in the evening",
+						"Wipe out sink",
+						"Remove everything from counters that doesn't go there",
+						"Wipe down counters, including under and behind appliances",
+						"Sweep the floor"
+					]
+				},
+				{
+					"title":"Weekly",
+					"class":"weekly",
+					"subTasks":[
+						"Clean fronts and shelves of cabinets",
+						"Clean counters, including under and behind appliances",
+						"Wipe down all appliances",
+						"Scrub out and disinfect sink",
+						"Scrub microwave, inside and out",
+						"Mop the floor"
 					]
 				}
 			]
@@ -154,26 +186,6 @@ angular.module('choresApp', []).controller('choresController', function ChoresCo
 						"Put all laundry in drawers or dirty bins",
 						"Take all trash to trash can",
 						"Make beds"
-					]
-				}
-			]
-		},
-		{	"title":"Kitchen",
-			"class":"kitchen",
-			"tasks":[
-				{
-					"title":"Any Time It Needs It",
-					"class":"daily",
-					"subTasks":[
-						"Rinse ALL dishes so no food is visible",
-						"Load a load of dishes into dishwasher",
-						"Add detergent, and start dishwasher",
-						"Wipe out sink",
-						"Wipe down cabinet doors",
-						"Clean counters, including under and behind appliances",
-						"Wipe down all appliances",
-						"Scrub microwave, inside and out",
-						"Organize everyone picking up the kitchen"
 					]
 				}
 			]
@@ -233,7 +245,7 @@ angular.module('choresApp', []).controller('choresController', function ChoresCo
 	self.prevDate = new Date(self.fromDate.valueOf() - (7 * 24 * 60 * 60 * 1000));
 	self.nextDate = new Date(self.fromDate.valueOf() + (7 * 24 * 60 * 60 * 1000));
 
-	var startDate = new Date(2018, 7, 20);
+	var startDate = new Date(2018, 7, 27);
 	var offset = Math.floor((self.fromDate.valueOf() - startDate.valueOf()) / (7 * 24 * 60 * 60 * 1000));
 
 	for (var i = 0; i < rotatingPeople.length; i++) {

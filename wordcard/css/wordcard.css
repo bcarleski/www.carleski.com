@@ -1,0 +1,60 @@
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  transition: 0.3s;
+  border-radius: 5px; /* 5px rounded corners */
+  width: 400px;
+  margin: 12px;
+}
+
+.card:hover {
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+}
+
+button {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 2em;
+    padding: 4px 12px;
+    border-radius: 5px;
+}
+
+.row {
+    padding: 8px 16px;
+    border-bottom: 1px solid #EEEEEE;
+}
+
+.number, .word {
+    display: inline-block;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 2em;
+    padding: 4px 12px;
+}
+
+.number {
+    width: 20px;
+    font-weight: 800;
+}
+.word {
+    width: 280px;
+    border-width: 6px;
+    border-style: solid;
+    border-radius: 3px;
+}
+
+.first .number { color: red; }
+.first .word { border-color: red; }
+
+.second .number { color: purple; }
+.second .word { border-color: purple; }
+
+.third .number { color: blue; }
+.third .word { border-color: blue; }
+
+.fourth .number { color: green; }
+.fourth .word { border-color: green; }
+
+.fifth .number { color: orange; }
+.fifth .word { border-color: orange; }
+
+[v-cloak] {
+    display: none;
+}
