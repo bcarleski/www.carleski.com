@@ -1,32 +1,10 @@
 <!DOCTYPE html>
 <html>
 	<head>
-		<meta name="viewport" content="width=device-width">
-		<title>Chore Chart</title>
-		<link rel='stylesheet' type='text/css' href='css/chores.css?v=9' />
-		<script src='https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.5.8/angular.min.js'></script>
-		<script type='text/javascript' src='js/choredata.js?v=14'></script>
+		<meta http-equiv="refresh" content="0; url=https://chores.carleski.com/">
 	</head>
-	<body ng-app="choresApp" ng-controller="choresController as c">
-		<div class="links">
-			<div class="prev-link"><a href="?date={{c.prevDate | date:'MM/dd/yyyy'}}">&lt;&lt;&lt; Previous Week</a></div>
-			<div class="next-link"><a href="?date={{c.nextDate | date:'MM/dd/yyyy'}}">Next Week &gt;&gt;&gt;</a></div>
-		</div>
-		<div class="title">Chores from {{c.fromDate | date:'MM/dd/yyyy'}} to {{c.toDate | date:'MM/dd/yyyy'}}</div>
-		<div class="sub-title">Click on an item to see more details</div>
-		<div class="person-chore" ng-repeat="personChore in c.personChores">
-			<div class="chore-header" ng-click="personChore.toggleDetails()">
-				<div class="chore {{personChore.chore.class}}">{{personChore.chore.title}}</div>
-				<div class="people"><span ng-repeat="person in personChore.people" class="person {{person.class}}">{{person.name}}<span></div>
-			</div>
-			<ul class="task-list hidden" id="taskList{{personChore.key}}">
-				<li class="task {{task.class}}" ng-repeat="task in personChore.chore.tasks">
-					<div class="task-title">{{task.title}}</div>
-					<ol class="sub-task-list">
-						<li class="sub-task" ng-repeat="subTask in task.subTasks">{{subTask}}</li>
-					</ol>
-				</li>
-			</ul>
-		</div>
+	<body>
+		<h1>Content Moved</h1>
+		<a href="https://chores.carleski.com/">Click Here for the new Chores chart</a>
 	</body>
 </html>
